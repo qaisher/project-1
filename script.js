@@ -21,7 +21,7 @@ function calc() {
     let input = document.getElementById('display-screen').value;
     let output = eval(input);
     document.getElementById("display-screen").value = output;
-    counter++;
+
 
     function createHistory(input, output) {
 
