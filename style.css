@@ -1,5 +1,6 @@
 body{
     font-family: 'Courier New', Courier, monospace;
+
 }
 
 
@@ -8,9 +9,9 @@ body{
     border-radius: 20%;
     margin: .2rem;
     color: white;
-    background-color: rgb(175, 172, 172);
-    height: auto;
-    width: 2.4rem;
+    background-color: black;
+    height: 2.5rem;
+    width: 2.5rem;
     padding: .5rem;
 }
 
@@ -26,10 +27,11 @@ body{
     width: 15rem;
     text-align: center;
     padding: 1rem .5rem;
-    background-color: black;
+    background-color: rgb(39, 133, 125);
     border-radius: 1rem;
     color: white;
     margin: auto;
+    box-shadow: 0rem 0rem 1rem 1rem rgb(102, 105, 105);
 
 }
 
@@ -45,6 +47,7 @@ body{
 
 .historyBtn {
     width: 6rem;
+    font-size: .8rem;
 }
 
 .history {
@@ -61,10 +64,10 @@ body{
 
 .historyBlock {
     height: auto;
-    background-color: whitesmoke;
+    background-color: rgb(211, 200, 200);
     text-align: right;
     color: black;
-    padding: .05rem;
+    padding: .1rem;
     margin: .05rem;
 
 }
@@ -72,4 +75,8 @@ body{
 .historyBlock:hover {
     background-color: white;
     cursor: pointer;
+}
+
+#deleteBtn {
+    font-size: .8rem;
 }

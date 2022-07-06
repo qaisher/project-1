@@ -65,7 +65,7 @@ function showHistory() {
 
     document.getElementById('keys').style.display = 'none';
     document.getElementById('history').style.display = 'block';
-    document.getElementById('historyBtn').value = 'Hide';
+    document.getElementById('historyBtn').value = 'HIDE';
     document.getElementById('historyBtn').onclick = showKeys;
 
     for (i = 0; i < historyArray.length; i++) {
@@ -93,7 +93,7 @@ function showKeys() {
 
     document.getElementById('keys').style.display = 'block';
     document.getElementById('history').style.display = 'none';
-    document.getElementById('historyBtn').value = 'History';
+    document.getElementById('historyBtn').value = 'HISTORY';
     document.getElementById('historyBtn').onclick = showHistory;
     for (let i = 0; i < historyArray.length; i++) {
         var element = document.getElementById('historyBlock' + i);
