@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="calculator">
+
+            <div class="upper">
+
+                <div class="title">
+                    <h4>CALCULATOR</h4>
+                </div>
+
+                <div class="row">
+                    <div class="display-screen">
+                        <input type="text" class="display" id="display-screen">
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <input type="button" class="btn btn-info historyBtn" id="historyBtn" value="History"
+                            onclick="showHistory()">
+                        <input type="button" class="btn btn-warning" value="DEL" onclick="backspace()">
+                        <input type="button" class="btn btn-primary" value="/" onclick="displayOperator(value)">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="lower" id="lower">
+                <div class="keys" id="keys">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <input type="button" class="btn btn-primary" value="7" onclick="displayNum(value)">
+                            <input type="button" class="btn btn-primary" value="8" onclick="displayNum(value)">
+                            <input type="button" class="btn btn-primary" value="9" onclick="displayNum(value)">
+                            <input type="button" class="btn btn-primary" value="*" onclick="displayOperator(value)">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <input type="button" class="btn btn-primary" value="4" onclick="displayNum(value)">
+                            <input type="button" class="btn btn-primary" value="5" onclick="displayNum(value)">
+                            <input type="button" class="btn btn-primary" value="6" onclick="displayNum(value)">
+                            <input type="button" class="btn btn-primary" value="-" onclick="displayOperator(value)">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <input type="button" class="btn btn-primary" value="1" onclick="displayNum(value)">
+                            <input type="button" class="btn btn-primary" value="2" onclick="displayNum(value)">
+                            <input type="button" class="btn btn-primary" value="3" onclick="displayNum(value)">
+                            <input type="button" class="btn btn-primary" value="+" onclick="displayOperator(value)">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <input type="button" class="btn btn-danger" value="AC" onclick="clr()">
+                            <input type="button" class="btn btn-primary" value="0" onclick="displayNum(value)">
+                            <input type="button" class="btn btn-primary" value="." onclick="displayNum(value)">
+                            <input type="button" class="btn btn-success" value="=" onclick="calc()">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="history" id="history">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.btn {
+    border-radius: 20%;
+    margin: .2rem;
+    color: white;
+    background-color: rgb(175, 172, 172);
+    height: auto;
+    width: 2.4rem;
+    padding: .5rem;
+}
+
+.container {
+    background-color: white;
+    margin-top: 5rem;
+
+
+}
+
+.calculator {
+    height: 28rem;
+    width: 15rem;
+    text-align: center;
+    padding: 1rem .5rem;
+    background-color: black;
+    border-radius: 1rem;
+    color: white;
+    margin: auto;
+
+}
+
+
+.display {
+    border-radius: 1rem;
+    width: 13rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    text-align: right;
+}
+
+
+.historyBtn {
+    width: 6rem;
+}
+
+.history {
+    height: 15rem;
+    border-radius: 1rem;
+    width: 13rem;
+    background-color: white;
+    margin: auto;
+    margin-top: .3rem;
+    display: none;
+    overflow-y: scroll;
+}
+
+
+.historyBlock {
+    height: auto;
+    background-color: whitesmoke;
+    text-align: right;
+    color: black;
+    padding: .05rem;
+    margin: .05rem;
+
+}
+
+.historyBlock:hover {
+    background-color: white;
+    cursor: pointer;
+}
